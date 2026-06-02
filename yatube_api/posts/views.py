@@ -1,6 +1,7 @@
 from rest_framework import viewsets, mixins, filters
 from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import get_object_or_404
+from django.shortcuts import render
 
 from posts.models import Post, Group, Comment, Follow
 from .serializers import (
